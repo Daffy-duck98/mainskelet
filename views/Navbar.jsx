@@ -16,6 +16,11 @@ function Navbar({ user }) {
             </p>
           </li>
           <li className="nav-item">
+            <a className="nav-link" href="/mygames">
+              My Games
+            </a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link" href="/logout">
               Log Out
             </a>
