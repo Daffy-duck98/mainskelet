@@ -17,6 +17,7 @@ const config = (app) => {
   app.use(ssr);
   app.use(getUser);
   app.use(resLocals);
+  app.disable('x-powered-by');
 };
 
 module.exports = config;
