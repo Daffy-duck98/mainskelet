@@ -15,13 +15,15 @@ const mainRoutes = require('./routes/main.routes');
 const signUpRoutes = require('./routes/signup.routes');
 const logInRoutes = require('./routes/login.routes');
 const logOutRoutes = require('./routes/logout.routes');
-const allGamesRouters = require('./routes/allgames.routes');
+const myGamesRouters = require('./routes/mygames.routes');
+const editRoutes = require('./routes/edit.routes');
 
 app.use('/', mainRoutes);
 app.use('/signup', signUpRoutes);
 app.use('/login', logInRoutes);
 app.use('/logout', logOutRoutes);
-app.use('/mygames', allGamesRouters);
+app.use('/mygames', myGamesRouters);
+app.use('/edit', editRoutes);
 
 async function server() {
   try {

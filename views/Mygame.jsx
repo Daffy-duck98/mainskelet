@@ -11,11 +11,7 @@ function Mygame({ games, user }) {
 
       {user && user.id === games.user_id && (
         <div className="upDel">
-          <a
-            href={`/updateform/${games.id}`}
-            className="update"
-            data-id={games.id}
-          >
+          <a href={`/edit/${games.id}`} className="update" data-id={games.id}>
             update
           </a>
           <a
