@@ -45,7 +45,7 @@ router.post('/', async (req, res) => {
       res.json({ signup: 'ok' });
     }
   } catch (err) {
-    res.json({ message: err.message });
+    res.status(500).json({ message: err.message });
   }
 });
 

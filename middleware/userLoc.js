@@ -10,7 +10,7 @@ const getUser = async (req, res, next) => {
 
 const resLocals = (req, res, next) => {
   if (req.session.userid) {
-    res.locals.userId = req.session.userid;
+    res.app.locals.userId = req.session.userid;
   }
   next();
 };

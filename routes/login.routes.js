@@ -13,7 +13,6 @@ router.post('/', async (req, res) => {
   try {
     const { login, password } = req.body;
     const userLogin = await User.findOne({ where: { login } });
-    // const userEmail = await User.findOne({ where: { email } });
 
     if (!login && !password) {
       res.status(400).json({ message: 'Эти поля пустые' });
@@ -32,7 +31,7 @@ router.post('/', async (req, res) => {
       res.status(400).json({ message: 'Не правильный пароль' });
     }
   } catch (err) {
-    res.json({ message: err.message });
+    res.status(500).json({ message: err.message });
   }
 });
 

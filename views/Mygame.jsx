@@ -1,8 +1,8 @@
 const React = require('react');
 
-function Mygame({ games = [], user }) {
+function Mygame({ games, user }) {
   return (
-    <div className="myBook">
+    <div>
       <h3>{games.title}</h3>
       <div className="block_img">
         <img src={games.img} alt="logo" />
