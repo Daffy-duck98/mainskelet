@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-  res.app.locals = {};
+  res.app.locals.user = {};
   req.session.destroy((err) => {
     if (err) {
       return res.status(400).json({ message: 'Ошибка удаления сессии' });
