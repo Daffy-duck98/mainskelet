@@ -18,6 +18,8 @@ function Layout({ title, children, user }) {
         <script defer src="/scripts/login.js" />
         <script defer src="/scripts/signup.js" />
         <script defer src="/scripts/edit.js" />
+        <script defer src="/scripts/add.js" />
+        <script defer src="/scripts/delete.js" />
         <script
           defer
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"

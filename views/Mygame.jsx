@@ -2,7 +2,7 @@ const React = require('react');
 
 function Mygame({ games, user }) {
   return (
-    <div>
+    <div className="cardGame">
       <h3>{games.title}</h3>
       <div className="block_img">
         <img src={games.img} alt="logo" />
@@ -12,10 +12,10 @@ function Mygame({ games, user }) {
       {user && user.id === games.user_id && (
         <div className="upDel">
           <a href={`/edit/${games.id}`} className="update" data-id={games.id}>
-            update
+            <button> update</button>
           </a>
           <a
-            href={`/mylibrary/${games.id}`}
+            href={`/mygames/${games.id}`}
             className="delete"
             data-id={games.id}
           >

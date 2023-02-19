@@ -5,6 +5,14 @@ const Mygame = require('./Mygame');
 function Mygames({ title, user, games }) {
   return (
     <Layout title={title} user={user}>
+      <div>
+        <form action="/mygames" method="post" id="add_forma">
+          <input type="text" name="title" placeholder="title" />
+          <input type="text" name="img" placeholder="img" />
+          <input type="text" name="description" placeholder="description" />
+          <button>Add</button>
+        </form>
+      </div>
       <div className="myGames">
         {games.map((game) => (
           <Mygame key={game.id} games={game} user={user} />
