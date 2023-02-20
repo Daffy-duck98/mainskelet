@@ -2,45 +2,33 @@ const React = require('react');
 
 function Navbar({ user }) {
   return (
-    <ul className="nav justify-content-center">
-      <li className="nav-item">
-        <a className="nav-link" href="/">
-          HOME
-        </a>
-      </li>
+    <div className="navbar">
+      <div className="box">
+        <a href="/">HOME</a>
+      </div>
       {user ? (
-        <>
-          <li>
-            <p>
-              <h1>Welocom, {user.name}</h1>
-            </p>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/mygames">
-              My Games
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/logout">
-              Log Out
-            </a>
-          </li>
-        </>
+        <div className="navbar-box">
+          <div className="box box-name">
+            <h2>Welocom, {user.name}</h2>
+          </div>
+          <div className="box">
+            <a href="/mygames">My Games</a>
+          </div>
+          <div className="box">
+            <a href="/logout">Log Out</a>
+          </div>
+        </div>
       ) : (
-        <>
-          <li className="nav-item">
-            <a className="nav-link" href="/signup">
-              Sign Up
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/login">
-              Log In
-            </a>
-          </li>
-        </>
+        <div className="navbar-box">
+          <div className="box">
+            <a href="/signup">Sign Up</a>
+          </div>
+          <div className="box">
+            <a href="/login">Log In</a>
+          </div>
+        </div>
       )}
-    </ul>
+    </div>
   );
 }
 

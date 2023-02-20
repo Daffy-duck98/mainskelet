@@ -6,17 +6,15 @@ function Login({}) {
     <Layout>
       <form action="/login" method="post" id="login_forma">
         <p id="message" />
-        <div className="mb-3">
-          <label className="form-label">Логин</label>
-          <input type="text" name="login" className="form-control" />
+        <div>
+          <label>Логин</label>
+          <input type="text" name="login" />
         </div>
-        <div className="mb-3">
-          <label className="form-label">Пароль</label>
-          <input type="password" name="password" className="form-control" />
+        <div>
+          <label>Пароль</label>
+          <input type="password" name="password" />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Отправить
-        </button>
+        <button type="submit">Отправить</button>
       </form>
     </Layout>
   );

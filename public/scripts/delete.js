@@ -1,5 +1,5 @@
 document.querySelector('.myGames').addEventListener('click', async (event) => {
-  // console.log(123456);
+  console.log(123456);
   if (event.target.classList.contains('delete')) {
     event.preventDefault();
     const { id } = event.target.dataset;

@@ -2,7 +2,7 @@ const React = require('react');
 const Layout = require('./Layout');
 const Mygame = require('./Mygame');
 
-function Mygames({ title, user, games }) {
+function Mygames({ title, user, games = [] }) {
   return (
     <Layout title={title} user={user}>
       <div>
