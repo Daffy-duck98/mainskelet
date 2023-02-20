@@ -86,3 +86,15 @@ button {
   width: 100px;
   height: 20px;
 }
+
+.addForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

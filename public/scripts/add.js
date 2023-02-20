@@ -16,4 +16,5 @@ document
     });
     const data = await res.text();
     document.querySelector('.myGames').insertAdjacentHTML('beforeend', data);
+    event.target.reset();
   });
