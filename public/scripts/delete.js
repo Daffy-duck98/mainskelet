@@ -1,5 +1,4 @@
 document.querySelector('.myGames').addEventListener('click', async (event) => {
-  console.log(123456);
   if (event.target.classList.contains('delete')) {
     event.preventDefault();
     const { id } = event.target.dataset;
@@ -7,7 +6,7 @@ document.querySelector('.myGames').addEventListener('click', async (event) => {
       method: 'DELETE',
     });
     const data = await res.json();
-    if (data.delete) {
+    if (data) {
       event.target.closest('.cardGame').remove();
     }
   }

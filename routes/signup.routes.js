@@ -4,9 +4,13 @@ const Signup = require('../views/Signup');
 const { User } = require('../db/models');
 
 router.get('/', (req, res) => {
-  res.renderComponent(Signup, {
-    title: 'SIGN UP',
-  });
+  try {
+    res.renderComponent(Signup, {
+      title: 'SIGN UP',
+    });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
 });
 
 router.post('/', async (req, res) => {

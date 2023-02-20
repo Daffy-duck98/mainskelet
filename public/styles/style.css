@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(3deg, #e6d16c, #16014c);
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
   padding: 16px;
-  background-color: rgb(35, 202, 227);
   border-radius: 16px;
 }
 
@@ -18,7 +21,7 @@
 }
 
 .box {
-  border: 1px solid rgb(73, 18, 116);
+  border: 2px solid rgb(16, 91, 241);
   border-radius: 16px;
   padding: 18px;
   box-shadow: -5px y-offset;
@@ -28,9 +31,11 @@
   align-items: center;
 }
 
-a {
+a,
+h2,
+h3 {
   text-decoration: none;
-  color: black;
+  color: rgb(202, 202, 202);
 }
 
 .box-name {
@@ -47,7 +52,7 @@ a {
 }
 
 .cardGame {
-  border: 2px solid rgb(21, 112, 168);
+  border: 2px solid rgb(16, 91, 241);
   border-radius: 16px;
   width: 25%;
   display: flex;
@@ -80,7 +85,7 @@ button {
   margin-right: 10px;
   border: none;
   border-radius: 16px;
-  background-color: rgb(35, 202, 227);
+  background-color: rgb(16, 91, 241);
   justify-content: center;
   align-items: center;
   width: 100px;
