@@ -6,7 +6,7 @@ router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
     const games = await Game.findOne({
-      where: { id, user_id: res.app.locals.userId },
+      where: { id, user_id: req.session.userid },
     });
     res.renderComponent(Edit, {
       title: 'Edit Game',
@@ -24,7 +24,7 @@ router.put('/:id', async (req, res) => {
 
     if (title && img && description) {
       const games = await Game.findOne({
-        where: { id, user_id: res.app.locals.userId },
+        where: { id, user_id: req.session.userid },
       });
       games.title = title;
       games.img = img;
