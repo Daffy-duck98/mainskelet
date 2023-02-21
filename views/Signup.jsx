@@ -6,27 +6,33 @@ function Signup({}) {
     <Layout>
       <form action="/signup" method="post" id="signup_forma">
         <div>
-          <label>Имя пользователя</label>
-          <input type="text" name="name" id="exampleInputEmail1" />
+          <p className="tex">Имя пользователя</p>
+          <input type="text" name="name" placeholder="  Name" />
         </div>
         <div>
-          <label>Логин</label>
-          <input type="text" name="login" />
+          <p className="tex">Логин</p>
+          <input type="text" name="login" placeholder="  LogIn" />
         </div>
         <div className="mb-3">
-          <label>Адрес электронной почты</label>
-          <input type="email" name="email" />
+          <p className="tex">Адрес электронной почты</p>
+          <input type="email" name="email" placeholder="  Email" />
         </div>
         <div>
-          <label>Пароль</label>
-          <input type="password" name="password" />
+          <p className="tex">Пароль</p>
+          <input type="password" name="password" placeholder="  password" />
         </div>
         <div>
-          <label>Введите еще раз пароль</label>
-          <input type="password" name="password2" />
+          <p className="tex">Введите еще раз пароль</p>
+          <input
+            type="password"
+            name="password2"
+            placeholder="  repeat password"
+          />
         </div>
-        <button type="submit">Отправить</button>
-        <p id="message" />
+        <div className="send">
+          <button type="submit">Отправить</button>
+        </div>
+        <p className="tex" id="message" />
       </form>
     </Layout>
   );

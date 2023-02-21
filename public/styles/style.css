@@ -103,3 +103,32 @@ button {
   justify-content: center;
   margin-top: 20px;
 }
+
+.tex {
+  display: flex;
+  justify-content: center;
+}
+
+#signup_forma {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+#login_forma {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 16px;
+  border: 2px solid rgb(16, 91, 241);
+}
+.send {
+  display: flex;
+  justify-content: center;
+}

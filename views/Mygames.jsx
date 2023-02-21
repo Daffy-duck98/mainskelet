@@ -8,9 +8,9 @@ function Mygames({ title, user, games = [] }) {
       <div className="addForm">
         <form action="/mygames" method="post" id="add_forma">
           <div>
-            <input type="text" name="title" placeholder="title" />
-            <input type="text" name="img" placeholder="img" />
-            <input type="text" name="description" placeholder="description" />
+            <input type="text" name="title" placeholder="   title" />
+            <input type="text" name="img" placeholder="  img" />
+            <input type="text" name="description" placeholder="  description" />
           </div>
           <div className="btn-add">
             <button>Add</button>

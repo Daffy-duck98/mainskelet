@@ -7,14 +7,17 @@ function Login({}) {
       <form action="/login" method="post" id="login_forma">
         <p id="message" />
         <div>
-          <label>Логин</label>
+          <p className="tex">Логин</p>
           <input type="text" name="login" />
         </div>
         <div>
-          <label>Пароль</label>
+          <p className="tex">Пароль</p>
           <input type="password" name="password" />
         </div>
-        <button type="submit">Отправить</button>
+        <div className="send">
+          <button type="submit">Отправить</button>
+        </div>
+        <p className="tex" id="message" />
       </form>
     </Layout>
   );
