@@ -6,7 +6,6 @@ const getUser = async (req, res, next) => {
       raw: true,
     });
     res.app.locals.user = user;
-    console.log(user);
   }
   next();
 };
