@@ -22,16 +22,17 @@ router.post('/', async (req, res) => {
     const id = req.session.userid;
     const { title, img, description } = req.body;
 
-    const games = await Game.create({
-      title,
-      img,
-      description,
-      user_id: id,
-    });
-
-    res.renderComponent(Mygame, {
-      games,
-    });
+    if ((title, img, description)) {
+      const games = await Game.create({
+        title,
+        img,
+        description,
+        user_id: id,
+      });
+      res.renderComponent(Mygame, {
+        games,
+      });
+    }
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

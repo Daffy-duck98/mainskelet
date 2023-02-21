@@ -15,7 +15,7 @@ document
       }),
     });
     const data = await res.json();
-    if (data.edit === 'ok') {
+    if (data.edit) {
       window.location.assign('/mygames');
     } else {
       document.querySelector('#message').innerHTML = data.message;

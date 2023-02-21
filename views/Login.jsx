@@ -5,7 +5,6 @@ function Login({}) {
   return (
     <Layout>
       <form action="/login" method="post" id="login_forma">
-        <p id="message" />
         <div>
           <p className="tex">Логин</p>
           <input type="text" name="login" />
